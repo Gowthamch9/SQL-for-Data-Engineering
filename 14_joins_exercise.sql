@@ -1,0 +1,1 @@
+select p.name, c.name,p.product_id from products p join categories c on p.category_id=c.category_id where c.category_id=1

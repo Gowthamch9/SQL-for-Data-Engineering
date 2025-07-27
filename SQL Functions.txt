@@ -1,0 +1,30 @@
+SQL Functions
+
+
+select
+from 
+where 
+order by
+create table
+insert into orders values
+update orders set total_amount = 100 where order_id=5
+delete from orders where order_id=5
+truncate orders
+drop table orders
+inner join
+left join
+right join
+full outer join
+union 
+union all
+case statements- when, then, end as
+group by- count(), sum(), avg(), max(), min(), stddev()
+group by , having
+math functions - abs(), ceil(), floor(), round(), sqrt()
+date- current_date, extract(), date_part(), date_trunc(), age(), to_date(), to_char
+time-current_time, current_timestamp, localtime, localtimestamp, extract(), date_trunc(), date_part()
+string- pipeline, concar(), concat_ws(), trim or btrim, ltrim, rtrim, substring(), left(), right(), upper(), lower(), initcap(), position(), length()
+analytical functions - rank(), dense_rank(), row_number(), lag(), lead(), moving_total(), moving_avg()
+views
+stored procedure
+
