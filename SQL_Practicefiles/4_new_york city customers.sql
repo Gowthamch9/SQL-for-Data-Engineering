@@ -1,0 +1,1 @@
+select * from customer where city like 'N%' order by customer_name
