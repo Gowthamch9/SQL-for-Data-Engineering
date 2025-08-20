@@ -28,3 +28,16 @@ This repository demonstrates my SQL skills applied in both **real-world data eng
   - **CROSS APPLY** and **OUTER APPLY** for subquery joins  
   - Implementing **Stored Procedures** for repeatable logic  
   - Applying query optimization techniques for performance
+    
+---
+
+## ⚡ Example Queries  
+
+**1. Customer Retention Analysis (Window Function)**  
+```sql
+SELECT 
+    CustomerID,
+    OrderDate,
+    LAG(OrderDate) OVER (PARTITION BY CustomerID ORDER BY OrderDate) AS PreviousOrderDate,
+    DATEDIFF(DAY, LAG(OrderDate) OVER (PARTITION BY CustomerID ORDER BY OrderDate), OrderDate) AS DaysBetweenOrders
+FROM Orders;
